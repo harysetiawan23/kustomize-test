@@ -1,0 +1,27 @@
+# https://kubernetes.io/docs/concepts/services-networking/service/
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-a
+spec:
+  type: NodePort
+  ports:
+  - name: nginx-a-local
+    protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 30081
+---
+# https://kubernetes.io/docs/concepts/services-networking/service/
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-b
+spec:
+  type: NodePort
+  ports:
+  - name: nginx-b-local
+    protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 30082

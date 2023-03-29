@@ -1,0 +1,8 @@
+commonLabels:
+  app: nginx
+bases:
+  - ../../base/nginx_a
+  - ../../base/nginx_b
+patchesStrategicMerge:
+  - "service.yaml"
+  - "deployment.yaml"
