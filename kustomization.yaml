@@ -1,8 +1,8 @@
 commonLabels:
   app: nginx
 resources:
-  - ./nginx_a
-  - ./nginx_b
+  - ./base/nginx_a
+  - ./base/nginx_b
 patchesStrategicMerge:
   - "./overlays/dev/service.yaml"
   - "./overlays/dev/deployment.yaml"
