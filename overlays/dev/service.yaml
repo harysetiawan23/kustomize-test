@@ -10,7 +10,6 @@ spec:
     protocol: TCP
     port: 80
     targetPort: 80
-    nodePort: 30081
 ---
 # https://kubernetes.io/docs/concepts/services-networking/service/
 apiVersion: v1
@@ -24,4 +23,3 @@ spec:
     protocol: TCP
     port: 80
     targetPort: 80
-    nodePort: 30082
