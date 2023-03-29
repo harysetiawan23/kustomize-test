@@ -5,3 +5,4 @@ resources:
   - ./nginx_b
 patchesStrategicMerge:
   - "./overlays/dev/service.yaml"
+  - "./overlays/dev/deployment.yaml"
