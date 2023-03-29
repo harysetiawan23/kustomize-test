@@ -6,7 +6,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - name: nginx-a-local
+  - name: nginx-a
     protocol: TCP
     port: 80
     targetPort: 80
@@ -20,7 +20,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - name: nginx-b-local
+  - name: nginx-b
     protocol: TCP
     port: 80
     targetPort: 80
