@@ -6,7 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - name: nginx-a
+  - name: nginx-a-lb
     protocol: TCP
     port: 80
     targetPort: 80
@@ -19,7 +19,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - name: nginx-b
+  - name: nginx-b-lb
     protocol: TCP
     port: 80
     targetPort: 80
