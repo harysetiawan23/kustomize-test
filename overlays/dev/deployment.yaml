@@ -10,6 +10,18 @@ spec:
     matchLabels:
       app: nginx-a
   replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx-a
+    spec:
+      # initContainers:
+        # Init containers are exactly like regular containers, except:
+          # - Init containers always run to completion.
+          # - Each init container must complete successfully before the next one starts.
+      containers:
+      - name: nginx-a
+        image: nginx:stable-alpine3.16
 ---
 # https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 apiVersion: apps/v1
@@ -23,3 +35,15 @@ spec:
     matchLabels:
       app: nginx-b
   replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx-b
+    spec:
+      # initContainers:
+        # Init containers are exactly like regular containers, except:
+          # - Init containers always run to completion.
+          # - Each init container must complete successfully before the next one starts.
+      containers:
+      - name: nginx-a
+        image: nginx:stable-alpine3.16
