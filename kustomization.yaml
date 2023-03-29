@@ -1,0 +1,7 @@
+commonLabels:
+  app: nginx
+resources:
+  - ./nginx_a
+  - ./nginx_b
+patchesStrategicMerge:
+  - "./overlays/dev/service.yaml"
