@@ -21,7 +21,7 @@ spec:
           # - Each init container must complete successfully before the next one starts.
       containers:
       - name: nginx-a
-        image: nginx:stable-alpine3.16
+        image: nginx:latest
 ---
 # https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 apiVersion: apps/v1
@@ -46,4 +46,4 @@ spec:
           # - Each init container must complete successfully before the next one starts.
       containers:
       - name: nginx-a
-        image: nginx:stable-alpine3.16
+        image: nginx:latest
