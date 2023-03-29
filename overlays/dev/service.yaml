@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-a
+  namespace: dev
 spec:
   type: NodePort
   ports:
@@ -17,6 +18,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-b
+  namespace: dev
 spec:
   type: NodePort
   ports:

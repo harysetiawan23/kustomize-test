@@ -3,7 +3,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-b
-  namespace: default
 spec:
   selector:
     app: nginx-b
